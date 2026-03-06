@@ -591,55 +591,75 @@ footer {
 @media (max-width: 680px) {
   nav { padding: 16px 20px; }
   .nav-links { display: none; }
-  .hero { padding: 100px 24px 64px; }
-  .hero-desc { font-size: 16px; line-height: 2.4; }
+  .hero { padding: 100px 20px 64px; }
+  .hero-desc { font-size: 15px; line-height: 2.4; }
   .hero-date { font-size: 20px; }
-  .hero-venue { font-size: 15px; }
-  .hero-cta { font-size: 15px; padding: 18px 40px; }
+  .hero-venue { font-size: 14px; }
+  .hero-cta { font-size: 14px; padding: 16px 36px; }
 
   .section { padding: 56px 20px; }
+  .section-inner { max-width: 100%; }
   .section-title { font-size: 22px; }
-  .label { font-size: 13px; }
+  .label { font-size: 12px; }
 
   .overview-grid { grid-template-columns: 1fr; }
   .ov-cell { border-right: none; padding: 20px 16px; }
   .ov-cell:nth-last-child(-n+2) { border-bottom: 1px solid rgba(192,154,60,0.18); }
   .ov-cell:last-child { border-bottom: none; }
-  .ov-key { font-size: 12px; }
-  .ov-val { font-size: 19px; }
+  .ov-key { font-size: 11px; }
+  .ov-val { font-size: 18px; }
   .ov-sub { font-size: 13px; }
 
-  .prog-text { font-size: 15px; }
-  .prog-detail { font-size: 14px; }
-  .prog-title { font-size: 20px; }
-  .seat-kanji { font-size: 26px; }
-  .seat-host { font-size: 14px; }
+  .prog-text { font-size: 14px; }
+  .prog-detail { font-size: 13px; }
+  .prog-title { font-size: 19px; }
+  .seat-kanji { font-size: 24px; }
+  .seat-host { font-size: 13px; }
   .seats { grid-template-columns: 1fr; }
 
-  .timetable td { font-size: 14px; padding: 14px 10px; }
-  .timetable td:first-child { font-size: 16px; }
-  .tt-tag { font-size: 10px; }
+  /* タイムテーブル */
+  .timetable { font-size: 13px; }
+  .timetable td { font-size: 13px; padding: 14px 8px; }
+  .timetable td:first-child { font-size: 15px; width: 80px; padding-right: 8px; }
+  .tt-tag { font-size: 9px; padding: 2px 5px; margin-right: 4px; }
 
+  /* Performance & Dining の行 */
+  .perf-item { flex-direction: column !important; gap: 6px !important; }
+  .perf-time { min-width: unset !important; }
+
+  /* チケット */
   .tickets-grid { grid-template-columns: 1fr; }
   .ticket { padding: 28px 20px; }
-  .ticket-name { font-size: 18px; }
-  .ticket-price { font-size: 42px; }
-  .ticket-price span { font-size: 20px; }
-  .ticket-includes { font-size: 15px; }
+  .ticket-name { font-size: 17px; }
+  .ticket-price .num { font-size: 38px; }
+  .ticket-price .unit { font-size: 17px; }
+  .ticket-includes { font-size: 14px; }
   .ticket-note { font-size: 13px; }
-  .ticket-cta { font-size: 15px; padding: 14px; }
+  .ticket-cta { font-size: 14px; padding: 14px; }
 
-  .faq-q { font-size: 16px; }
-  .faq-a { font-size: 15px; }
+  /* FAQ */
+  .faq-q { font-size: 15px; }
+  .faq-a { font-size: 14px; }
 
+  /* アクセス */
   .access-grid { grid-template-columns: 1fr; }
-  .access-name { font-size: 20px; }
-  .access-body { font-size: 15px; }
-  .access-box p { font-size: 14px; }
+  .access-name { font-size: 19px; }
+  .access-body { font-size: 14px; }
+  .access-box p { font-size: 13px; }
 
-  .cta-band-title { font-size: 22px; }
-  .cta-band-sub { font-size: 14px; }
-  .cta-band-btn { font-size: 15px; padding: 18px 40px; }
+  /* CTA */
+  .cta-band { padding: 64px 20px; }
+  .cta-band-title { font-size: 20px; }
+  .cta-band-sub { font-size: 13px; }
+  .cta-band-btn { font-size: 14px; padding: 16px 36px; }
+
+  /* 茶人 奈良 */
+  .nara-row { flex-direction: column !important; gap: 24px !important; }
+  .nara-photo { width: 100% !important; max-width: 280px; }
+
+  /* 藤田 */
+  .fujita-row { flex-direction: column !important; gap: 32px !important; }
+  .fujita-photo { width: 100% !important; max-width: 280px; }
 
   footer { flex-direction: column; gap: 12px; text-align: center; }
 }
@@ -805,8 +825,8 @@ footer {
     <div style="display:flex;flex-direction:column;gap:0;margin-top:48px;">
 
       <!-- 大庵 / 奈良 宗久：写真＋テキスト横並び -->
-      <div style="display:flex;gap:40px;align-items:flex-start;padding:40px 0;border-top:1px solid rgba(192,154,60,0.15);">
-        <div style="flex-shrink:0;width:200px;border:1px solid rgba(192,154,60,0.2);overflow:hidden;">
+      <div class="nara-row" style="display:flex;gap:40px;align-items:flex-start;padding:40px 0;border-top:1px solid rgba(192,154,60,0.15);">
+        <div class="nara-photo" style="flex-shrink:0;width:200px;border:1px solid rgba(192,154,60,0.2);overflow:hidden;">
           <img src="images/narasokyu_.jpg" alt="奈良 宗久" style="width:100%;display:block;object-fit:cover;">
         </div>
         <div style="padding-top:4px;">
@@ -882,22 +902,22 @@ footer {
     <div style="margin-top:48px;">
       <p style="font-family:'IM Fell English',serif;font-style:italic;font-size:11px;letter-spacing:0.4em;color:var(--gold);margin-bottom:20px;">Performance &amp; Dining</p>
       <div style="border-top:1px solid rgba(192,154,60,0.15);">
-        <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
-          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">12:30</span>
+        <div class="perf-item" style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
+          <span class="perf-time" style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">12:30</span>
           <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
             <span class="tt-tag tag-noh">公演</span>邦楽・日本舞踊　特別公演（〜13:10）<br>
             <span style="font-size:11px;color:var(--muted);">全チケット共通でご覧いただけます</span>
           </div>
         </div>
-        <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
-          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">15:00</span>
+        <div class="perf-item" style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
+          <span class="perf-time" style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">15:00</span>
           <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
             <span class="tt-tag tag-noh">公演</span>邦楽・日本舞踊　セカンドステージ（〜15:40）<br>
             <span style="font-size:11px;color:var(--muted);">上演内容は1回目と同じです。全チケット共通でご覧いただけます</span>
           </div>
         </div>
-        <div style="display:flex;gap:24px;padding:18px 0;align-items:flex-start;">
-          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">11:00〜</span>
+        <div class="perf-item" style="display:flex;gap:24px;padding:18px 0;align-items:flex-start;">
+          <span class="perf-time" style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">11:00〜</span>
           <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
             <span class="tt-tag tag-food">軽食</span>軽食 オープン<br>
             <span style="font-size:11px;color:var(--muted);">全チケット共通でご利用いただけます</span>
@@ -1055,8 +1075,8 @@ footer {
   <div class="section-inner">
     <span class="label">Host</span>
     <h2 class="section-title">主催</h2>
-    <div style="display:flex;gap:56px;align-items:flex-start;margin-top:48px;">
-      <div style="flex-shrink:0;width:240px;">
+    <div class="fujita-row" style="display:flex;gap:56px;align-items:flex-start;margin-top:48px;">
+      <div class="fujita-photo" style="flex-shrink:0;width:240px;">
         <img src="images/takakofujita.jpg" alt="藤田貴子" style="width:100%;border:1px solid rgba(192,154,60,0.2);display:block;">
       </div>
       <div style="flex:1;padding-top:8px;">
