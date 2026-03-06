@@ -846,10 +846,16 @@ footer {
   <div class="section-inner">
     <span class="label">Timetable</span>
     <h2 class="section-title">タイムテーブル（予定）</h2>
+
+    <!-- 茶席のみ -->
     <table class="timetable">
       <tr>
         <th>時刻</th>
-        <th>内容</th>
+        <th>茶席</th>
+      </tr>
+      <tr>
+        <td>9:30〜</td>
+        <td>受付開始　お茶席チケットお渡し</td>
       </tr>
       <tr>
         <td>10:00</td>
@@ -860,33 +866,54 @@ footer {
         <td><span class="tt-tag tag-tea">茶席</span>午前の部②　大庵／広間／立礼（〜11:30）</td>
       </tr>
       <tr>
-        <td>11:00</td>
-        <td><span class="tt-tag tag-food">軽食</span>軽食BAR オープン（〜終了まで）</td>
-      </tr>
-      <tr>
         <td>11:30</td>
         <td><span class="tt-tag tag-tea">茶席</span>午前の部③　大庵／広間／立礼（〜12:15）</td>
       </tr>
-      <tr class="tt-highlight">
-        <td>12:30</td>
-        <td><span class="tt-tag tag-noh">公演</span>邦楽・日本舞踊　特別公演（〜14:00）<br><span style="font-size:11px;color:var(--muted);">全チケット共通でご覧いただけます</span></td>
+      <tr>
+        <td>13:30</td>
+        <td><span class="tt-tag tag-tea">茶席</span>午後の部①　大庵／広間／立礼（〜14:15）</td>
       </tr>
       <tr>
-        <td>14:00</td>
-        <td><span class="tt-tag tag-tea">茶席</span>午後の部①　大庵／広間／立礼（〜14:45）</td>
+        <td>14:15</td>
+        <td><span class="tt-tag tag-tea">茶席</span>午後の部②　大庵／広間／立礼（〜15:00）</td>
       </tr>
       <tr>
-        <td>14:45</td>
-        <td><span class="tt-tag tag-tea">茶席</span>午後の部②　大庵／広間／立礼（〜15:30）</td>
-      </tr>
-      <tr>
-        <td>15:30</td>
-        <td><span class="tt-tag tag-tea">茶席</span>午後の部③　大庵／広間／立礼（〜16:15）</td>
+        <td>15:00</td>
+        <td><span class="tt-tag tag-tea">茶席</span>午後の部③　大庵／広間／立礼（〜15:45）</td>
       </tr>
     </table>
     <p style="font-size:11px;color:var(--muted);margin-top:16px;letter-spacing:0.1em;line-height:1.9">
       ※時間は変更になる場合があります。詳細は参加確定後にご案内いたします。
     </p>
+
+    <!-- 公演・軽食 -->
+    <div style="margin-top:48px;">
+      <p style="font-family:'IM Fell English',serif;font-style:italic;font-size:11px;letter-spacing:0.4em;color:var(--gold);margin-bottom:20px;">Performance &amp; Dining</p>
+      <div style="border-top:1px solid rgba(192,154,60,0.15);">
+        <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
+          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">12:30</span>
+          <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
+            <span class="tt-tag tag-noh">公演</span>邦楽・日本舞踊　特別公演（〜13:10）<br>
+            <span style="font-size:11px;color:var(--muted);">全チケット共通でご覧いただけます</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid rgba(192,154,60,0.1);align-items:flex-start;">
+          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">15:00</span>
+          <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
+            <span class="tt-tag tag-noh">公演</span>邦楽・日本舞踊　セカンドステージ（〜15:40）<br>
+            <span style="font-size:11px;color:var(--muted);">上演内容は1回目と同じです。全チケット共通でご覧いただけます</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:24px;padding:18px 0;align-items:flex-start;">
+          <span style="font-family:'IM Fell English',serif;font-size:15px;color:var(--crimson);white-space:nowrap;min-width:80px;">11:00〜</span>
+          <div style="font-size:13px;letter-spacing:0.08em;color:#3a3020;">
+            <span class="tt-tag tag-food">軽食</span>軽食BAR オープン<br>
+            <span style="font-size:11px;color:var(--muted);">全チケット共通でご利用いただけます</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
