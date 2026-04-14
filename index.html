@@ -79,12 +79,12 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: grid;
   place-items: center;
   position: relative;
   overflow: hidden;
-  padding: 100px 48px 60px;
+  padding: 100px 48px 48px;
 }
 
 /* Radial atmospheric layers */
@@ -689,7 +689,7 @@ footer {
   <svg class="hero-leaves" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
     <path d="M250 30 C200 80 120 100 80 180 C40 260 70 360 150 400 C230 440 340 400 390 320 C440 240 420 140 360 90 C300 40 280 20 250 30Z" fill="#7a1212"/>
     <path d="M380 50 C360 90 380 140 360 180 C340 220 300 230 290 270 C280 310 300 350 330 360 C360 370 400 340 410 300 C420 260 400 220 400 180 C400 140 410 80 380 50Z" fill="#c09a3c" opacity="0.8"/>
-    <path d="M120 120 C140 150 160 170 150 200 C140 230 110 240 100 265 C90 290 100 320 120 325 C140 330 165 310 170 285 C175 260 160 235 155 210 C150 185 145 155 120 120Z" fill="#2e4a32" opacity="0.7"/>
+    <path d="M120 120 C140 150 160 170 150 200 C140 230 110 240 100 265 C90 290 100 320 120 325 C140 330 165 310 170 285 C175 260 160 235 155 210 C150 185 145 155 120 120Z" fill="#c45a1a" opacity="0.7"/>
     <path d="M300 200 C320 220 340 250 330 280 C320 310 290 320 280 345 C270 370 285 400 305 405 C325 410 350 385 352 358 C354 331 335 310 330 285 C325 260 305 230 300 200Z" fill="#7a1212" opacity="0.5"/>
   </svg>
   <svg class="hero-leaves-2" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
@@ -720,17 +720,9 @@ footer {
   </div>
 </section>
 
-<!-- PHOTO GALLERY -->
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-height:420px;overflow:hidden;">
-  <div style="overflow:hidden;aspect-ratio:3/4;">
-    <img src="images/photo1.jpg" alt="茶室への路地" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-  </div>
-  <div style="overflow:hidden;aspect-ratio:3/4;">
-    <img src="images/photo2.jpg" alt="南暁 茶苑" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-  </div>
-  <div style="overflow:hidden;aspect-ratio:3/4;">
-    <img src="images/photo3.jpg" alt="苔庭" style="width:100%;height:100%;object-fit:cover;transition:transform 0.6s;display:block;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-  </div>
+<!-- PHOTO -->
+<div style="aspect-ratio:24/7;overflow:hidden;">
+  <img src="images/28_静寂の能舞台.jpeg" alt="南ヶ丘倶楽部 能舞台「千ケ滝」" style="width:100%;height:100%;object-fit:cover;object-position:center 55%;display:block;">
 </div>
 
 <!-- OVERVIEW -->
@@ -774,20 +766,8 @@ footer {
         <p class="prog-text">
           南ヶ丘倶楽部の能舞台にて、日本舞踊と邦楽をご披露いたします。江戸のお座敷音楽「端唄」「小唄」から、劇場音楽「長唄」、また長野県の「民謡」なども織り交ぜた多彩なプログラムとなっております。和楽器それぞれの特性もお話ししながら進めて参ります。
         </p>
-        <div style="max-width:420px;aspect-ratio:4/3;overflow:hidden;border:1px solid rgba(192,154,60,0.2);margin-bottom:20px;">
-          <img src="images/hougaku.jpg" alt="邦楽" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
-        </div>
-        <p style="font-size:14px;letter-spacing:0.4em;color:var(--gold);margin-bottom:8px;">邦楽</p>
-        <p style="font-family:'Shippori Mincho B1',serif;font-size:18px;letter-spacing:0.2em;line-height:2;color:var(--ink);">
-          <span style="white-space:nowrap;">こうの 紫（唄・三味線）</span>　<span style="white-space:nowrap;">山本ゆきの（唄・三味線）</span><br>
-          <span style="white-space:nowrap;">望月美沙輔（笛）</span>　<span style="white-space:nowrap;">島村聖香（打物）</span>　<span style="white-space:nowrap;">望月左太助（打物）</span>
-        </p>
-        <div style="margin-top:28px;padding:24px 28px;border:1px solid rgba(192,154,60,0.15);background:rgba(192,154,60,0.03);">
-          <p style="font-size:14px;letter-spacing:0.3em;color:var(--gold);margin-bottom:10px;font-family:'Shippori Mincho B1',serif;">舞踊曲「春興鏡獅子」</p>
-          <p style="font-size:12px;line-height:2.2;color:#3a3020;letter-spacing:0.08em;">数ある歌舞伎舞踊の中でも、広く親しまれている名作のひとつ。明治２６年３月、東京の歌舞伎座で初演された長唄舞踊です。<br>優雅なしぐさと豪快な毛振り、演奏では長唄とお囃子が緩急を生み、舞踊を華やかに盛り上げます。</p>
-        </div>
-        <div class="wakatsuki-row" style="display:flex;gap:24px;align-items:flex-start;margin-top:16px;">
-          <div style="flex-shrink:0;width:160px;aspect-ratio:3/4;border:1px solid rgba(192,154,60,0.2);overflow:hidden;">
+        <div class="wakatsuki-row" style="display:flex;gap:24px;align-items:flex-start;margin-top:0;">
+          <div style="flex-shrink:0;width:200px;aspect-ratio:3/4;border:1px solid rgba(192,154,60,0.2);overflow:hidden;">
             <img src="images/wakatsuki-shishi.jpg" alt="若月 仙之助（鏡獅子）" style="width:100%;height:100%;display:block;object-fit:cover;object-position:center top;">
           </div>
           <div style="padding-top:4px;">
@@ -797,6 +777,18 @@ footer {
             <p style="font-size:12px;line-height:2.2;color:#3a3020;letter-spacing:0.08em;">城西国際大学客員教授（2013–2020）を歴任。<br>成田空港日本文化イベントをプロデュース（2014年–2017年、2025年〜2026年）。<br><br>ハリウッド映画、NHK紅白歌合戦をはじめ、国内外の映像・広告作品に出演。現在、CNN放送、サッポロビールCM、新橋大型3Dビジョンなどで映像展開中。</p>
           </div>
         </div>
+        <div style="margin-top:28px;padding:24px 28px;border:1px solid rgba(192,154,60,0.15);background:rgba(192,154,60,0.03);">
+          <p style="font-size:14px;letter-spacing:0.3em;color:var(--gold);margin-bottom:10px;font-family:'Shippori Mincho B1',serif;">舞踊曲「春興鏡獅子」</p>
+          <p style="font-size:12px;line-height:2.2;color:#3a3020;letter-spacing:0.08em;">数ある歌舞伎舞踊の中でも、広く親しまれている名作のひとつ。明治２６年３月、東京の歌舞伎座で初演された長唄舞踊です。<br>優雅なしぐさと豪快な毛振り、演奏では長唄とお囃子が緩急を生み、舞踊を華やかに盛り上げます。</p>
+        </div>
+        <div style="max-width:420px;aspect-ratio:4/3;overflow:hidden;border:1px solid rgba(192,154,60,0.2);margin-top:20px;margin-bottom:20px;">
+          <img src="images/hougaku.jpg" alt="邦楽" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+        </div>
+        <p style="font-size:14px;letter-spacing:0.4em;color:var(--gold);margin-bottom:8px;">邦楽</p>
+        <p style="font-family:'Shippori Mincho B1',serif;font-size:18px;letter-spacing:0.2em;line-height:2;color:var(--ink);">
+          <span style="white-space:nowrap;">こうの 紫（唄・三味線）</span>　<span style="white-space:nowrap;">山本ゆきの（唄・三味線）</span><br>
+          <span style="white-space:nowrap;">望月美沙輔（笛）</span>　<span style="white-space:nowrap;">島村聖香（打物）</span>　<span style="white-space:nowrap;">望月左太助（打物）</span>
+        </p>
       </div>
     </div>
 
