@@ -67,11 +67,11 @@ nav {
 }
 .nav-links a:hover { color: var(--crimson); }
 .nav-cta {
-  font-size: 10px;
-  letter-spacing: 0.3em;
+  font-size: 13px;
+  letter-spacing: 0.25em;
   color: var(--paper);
   background: var(--crimson);
-  padding: 8px 20px;
+  padding: 10px 24px;
   text-decoration: none;
   transition: background 0.2s;
 }
@@ -206,12 +206,12 @@ nav {
 }
 .hero-cta {
   display: inline-block;
-  padding: 16px 48px;
+  padding: 18px 52px;
   background: var(--crimson);
   color: var(--paper);
   text-decoration: none;
-  font-size: 11px;
-  letter-spacing: 0.4em;
+  font-size: 15px;
+  letter-spacing: 0.35em;
   transition: all 0.3s;
   opacity: 0; animation: fadeRise 1s 1.4s both;
 }
@@ -403,6 +403,8 @@ nav {
   position: relative;
   transition: transform 0.25s, box-shadow 0.25s;
   background: var(--paper);
+  display: flex;
+  flex-direction: column;
 }
 .ticket:hover {
   transform: translateY(-4px);
@@ -452,18 +454,20 @@ nav {
   line-height: 1.8;
 }
 .ticket-cta {
-  display: block; margin-top: 24px;
+  display: block; margin-top: auto;
   text-align: center;
-  padding: 11px;
-  border: 1px solid var(--crimson);
-  color: var(--crimson);
-  text-decoration: none;
-  font-size: 10px; letter-spacing: 0.35em;
-  transition: all 0.2s;
-}
-.ticket-cta:hover, .ticket.featured .ticket-cta {
+  padding: 14px;
   background: var(--crimson);
   color: var(--paper);
+  border: none;
+  text-decoration: none;
+  font-size: 14px; letter-spacing: 0.25em;
+  transition: all 0.2s;
+}
+.ticket-cta:hover {
+  background: var(--rust);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(122,18,18,0.2);
 }
 
 /* ── FAQ ── */
@@ -552,19 +556,19 @@ nav {
 }
 .cta-band-btn {
   display: inline-block;
-  padding: 18px 64px;
-  background: var(--gold);
-  color: var(--ink);
+  padding: 20px 68px;
+  background: var(--crimson);
+  color: var(--paper);
   text-decoration: none;
-  font-size: 11px; letter-spacing: 0.45em;
+  font-size: 16px; letter-spacing: 0.35em;
   font-weight: 500;
   transition: all 0.3s;
   position: relative;
 }
 .cta-band-btn:hover {
-  background: var(--pale-gold);
+  background: var(--rust);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(192,154,60,0.3);
+  box-shadow: 0 8px 32px rgba(122,18,18,0.3);
 }
 .cta-note {
   font-size: 10px; color: rgba(200,180,120,0.5);
@@ -680,7 +684,7 @@ footer {
     <a href="#tickets">チケット</a>
     <a href="#access">アクセス</a>
   </div>
-  <a href="#tickets" class="nav-cta">申し込む</a>
+  <a href="https://kinshuchakai.peatix.com/view" class="nav-cta" target="_blank">チケット購入</a>
 </nav>
 
 <!-- HERO -->
@@ -712,12 +716,9 @@ footer {
       流派の枠を超えた、現代の感性と日本の伝統が静かに響き合うひとときへ。<br>
       初めての方も、伝統文化に親しんでこられた方も、どなたでもお越しください。
     </p>
-    <a href="#tickets" class="hero-cta">チケットを申し込む</a>
+    <a href="https://kinshuchakai.peatix.com/view" class="hero-cta" target="_blank">チケット購入</a>
   </div>
 
-  <div class="scroll-cue">
-    <div class="scroll-bar"></div>
-  </div>
 </section>
 
 <!-- PHOTO -->
@@ -931,10 +932,6 @@ footer {
 <section class="section" id="tickets" style="background:var(--warm);">
   <div class="section-inner">
     <h2 class="section-title">チケット種別</h2>
-    <!-- 発売日告知 -->
-    <div style="background:rgba(122,18,18,0.07);border:1px solid rgba(122,18,18,0.2);padding:14px 24px;margin-bottom:28px;text-align:center;">
-      <p style="font-size:14px;letter-spacing:0.2em;color:var(--crimson);font-family:'Shippori Mincho B1',serif;">2026年6月6日（土）発売開始</p>
-    </div>
     <!-- 全チケット共通バナー -->
     <div style="background:rgba(46,74,50,0.07);border:1px solid rgba(46,74,50,0.2);padding:16px 24px;margin-bottom:32px;text-align:center;">
       <p style="font-size:13px;letter-spacing:0.15em;color:#2e4a32;">全チケット共通：邦楽・日本舞踊 特別公演 ＋ 軽食</p>
@@ -953,8 +950,8 @@ footer {
           <li>邦楽・日本舞踊 公演</li>
           <li>軽食</li>
         </ul>
-        <p class="ticket-note">2〜8名で1グループ ／ 午前・午後でお選びください<br>1グループ単位での申し込みとなります<br><br>※別途お申し込みフォームよりご連絡くださいませ<br><span style="font-size:9px;color:var(--muted);">※8月以降、空き枠がある場合はお一人様用チケットも販売予定です</span></p>
-        <span class="ticket-cta" style="opacity:0.45;cursor:not-allowed;pointer-events:none;">6/6 発売開始</span>
+        <p class="ticket-note">2〜8名で1グループ ／ 午前・午後でお選びください<br>1グループ単位での申し込みとなります<br><span style="font-size:9px;color:var(--muted);">※8月以降、空き枠がある場合はお一人様用チケットも販売予定です</span></p>
+        <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
       </div>
 
       <div class="ticket">
@@ -968,10 +965,10 @@ footer {
           <li>軽食</li>
         </ul>
         <p class="ticket-note">午前・午後でお選びください</p>
-        <span class="ticket-cta" style="opacity:0.45;cursor:not-allowed;pointer-events:none;">6/6 発売開始</span>
+        <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
       </div>
 
-      <div class="ticket" style="display:grid;grid-template-rows:auto;">
+      <div class="ticket">
 
         <p class="ticket-name">広間 または 立礼<br>一席券</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;">
@@ -990,7 +987,7 @@ footer {
           <li>軽食</li>
         </ul>
         <p class="ticket-note">午前・午後でお選びください</p>
-        <span class="ticket-cta" style="opacity:0.45;cursor:not-allowed;pointer-events:none;">6/6 発売開始</span>
+        <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
       </div>
 
     </div>
@@ -1102,8 +1099,8 @@ footer {
 <!-- CTA BAND -->
 <div class="cta-band">
   <h2 class="cta-band-title">秋の軽井沢でお会いしましょう</h2>
-  <p class="cta-band-sub">2026年10月25日（日）― 定員150名</p>
-  <span class="cta-band-btn" style="opacity:0.5;cursor:not-allowed;pointer-events:none;">6/6 発売開始</span>
+  <p class="cta-band-sub">2026年10月25日（日）</p>
+  <a href="https://kinshuchakai.peatix.com/view" class="cta-band-btn" target="_blank">チケット購入</a>
   <p class="cta-note">※Peatixのページに移動します</p>
 </div>
 
