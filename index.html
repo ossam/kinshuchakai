@@ -576,6 +576,48 @@ nav {
   position: relative;
 }
 
+/* ── CONTACT ── */
+.contact-section {
+  padding: 64px 48px;
+  text-align: center;
+  background: var(--paper);
+  border-top: 1px solid rgba(192,154,60,0.12);
+}
+.contact-inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.contact-title {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.contact-desc {
+  font-size: 14px;
+  line-height: 2.2;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 32px;
+}
+.contact-btn {
+  display: inline-block;
+  padding: 16px 48px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.contact-btn:hover {
+  background: var(--gold);
+  color: var(--paper);
+}
+
 /* ── FOOTER ── */
 footer {
   padding: 32px 48px;
@@ -669,6 +711,12 @@ footer {
   .fujita-row { flex-direction: column !important; gap: 32px !important; }
   .fujita-photo { width: 100% !important; max-width: 280px; }
 
+  /* お問い合わせ */
+  .contact-section { padding: 44px 20px; }
+  .contact-title { font-size: 20px; }
+  .contact-desc { font-size: 13px; }
+  .contact-btn { font-size: 13px; padding: 14px 36px; }
+
   footer { flex-direction: column; gap: 12px; text-align: center; }
 }
 </style>
@@ -683,6 +731,7 @@ footer {
     <a href="#program">プログラム</a>
     <a href="#tickets">チケット</a>
     <a href="#access">アクセス</a>
+    <a href="#contact">お問い合わせ</a>
   </div>
   <a href="https://kinshuchakai.peatix.com/view" class="nav-cta" target="_blank">チケット購入</a>
 </nav>
@@ -1103,6 +1152,18 @@ footer {
   <a href="https://kinshuchakai.peatix.com/view" class="cta-band-btn" target="_blank">チケット購入</a>
   <p class="cta-note">※Peatixのページに移動します</p>
 </div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2 class="contact-title">お問い合わせ</h2>
+    <p class="contact-desc">
+      取材のお申し込みやご質問などは、<br>
+      下記よりお問い合わせくださいませ。
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSet6iCjOnDpyxwIRs5G5iBUo87s9_IaO0lzA6OTSU08JWs0mA/viewform" class="contact-btn" target="_blank">お問い合わせフォーム</a>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer>
