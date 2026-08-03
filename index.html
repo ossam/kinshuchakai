@@ -397,6 +397,13 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+.tickets-grid-sub {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 66.666%;
+  margin: 20px auto 0;
+}
 .ticket {
   border: 1px solid rgba(192,154,60,0.2);
   padding: 32px 24px;
@@ -675,6 +682,7 @@ footer {
 
   /* チケット */
   .tickets-grid { grid-template-columns: 1fr; }
+  .tickets-grid-sub { grid-template-columns: 1fr; max-width: 100%; }
   .ticket { padding: 28px 20px; }
   .ticket-name { font-size: 17px; }
   .ticket-price .num { font-size: 32px; }
@@ -983,7 +991,7 @@ footer {
     <h2 class="section-title">チケット種別</h2>
     <!-- 全チケット共通バナー -->
     <div style="background:rgba(46,74,50,0.07);border:1px solid rgba(46,74,50,0.2);padding:16px 24px;margin-bottom:32px;text-align:center;">
-      <p style="font-size:13px;letter-spacing:0.15em;color:#2e4a32;">全チケット共通：邦楽・日本舞踊 特別公演 ＋ お弁当</p>
+      <p style="font-size:13px;letter-spacing:0.15em;color:#2e4a32;">全チケット共通：邦楽・日本舞踊 特別公演</p>
     </div>
 
     <div class="tickets-grid">
@@ -1039,6 +1047,32 @@ footer {
         <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
       </div>
 
+    </div>
+
+    <div class="tickets-grid-sub">
+      <div class="ticket">
+        <div class="ticket-badge" style="background:var(--forest);">NEW</div>
+        <p class="ticket-name">立礼 ペア券</p>
+        <p class="ticket-price"><span class="num">12,000</span><span class="unit">円</span></p>
+        <ul class="ticket-includes">
+          <li>立礼 茶席 2名様</li>
+          <li>邦楽・日本舞踊 公演</li>
+        </ul>
+        <p class="ticket-note">※軽食はつきません</p>
+        <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
+      </div>
+
+      <div class="ticket">
+        <div class="ticket-badge" style="background:var(--forest);">NEW</div>
+        <p class="ticket-name">立礼 グループ券</p>
+        <p class="ticket-price"><span class="num">25,000</span><span class="unit">円</span></p>
+        <ul class="ticket-includes">
+          <li>立礼 茶席 5名様</li>
+          <li>邦楽・日本舞踊 公演</li>
+        </ul>
+        <p class="ticket-note">※軽食はつきません</p>
+        <a href="https://kinshuchakai.peatix.com/view" class="ticket-cta" target="_blank">チケット購入</a>
+      </div>
     </div>
     <p style="font-size:11px;color:var(--muted);margin-top:24px;letter-spacing:0.1em;line-height:2;text-align:center">
       ※広間・立礼のお支払いはPeatixにてクレジットカード・コンビニ払い・銀行振込からお選びいただけます。<br>
