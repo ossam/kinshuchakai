@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>錦秋茶会 2026 ｜ 軽井沢南ヶ丘倶楽部</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M6NX5WX41"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8M6NX5WX41');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;700;800&family=Noto+Serif+JP:wght@300;400;500&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -1295,6 +1303,7 @@ footer {
 <!-- FOOTER -->
 <footer>
   <span class="footer-name">軽井沢南ヶ丘倶楽部　錦秋茶会 2026</span>
+  <span class="footer-copy">本サイトではアクセス解析のため Google Analytics を使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google による情報の使用</a></span>
   <span class="footer-copy">© 2026 takakofujita</span>
 </footer>
 
@@ -1305,6 +1314,15 @@ function toggleFaq(btn) {
   document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
 }
+
+document.querySelectorAll('a[href*="kinshuchakai.peatix.com"]').forEach((link) => {
+  link.addEventListener('click', () => {
+    gtag('event', 'ticket_purchase_click', {
+      link_text: link.textContent.trim(),
+      link_url: link.href
+    });
+  });
+});
 </script>
 </body>
 </html>
