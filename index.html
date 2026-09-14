@@ -266,6 +266,44 @@ nav {
   border-bottom: 1px solid rgba(192,154,60,0.2);
 }
 
+/* ── NEWS ── */
+.news-item {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 10px 8px;
+}
+#news .section-title {
+  border-bottom: none;
+  margin-bottom: 16px;
+}
+.news-date {
+  font-family: 'IM Fell English', serif;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.news-title {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.news-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(192,154,60,0.55);
+  transition: color 0.2s, border-color 0.2s;
+}
+.news-title a:hover {
+  color: var(--crimson);
+  border-color: var(--crimson);
+}
+
 /* ── OVERVIEW ── */
 .overview-grid {
   display: grid;
@@ -655,6 +693,10 @@ footer {
   .section-title { font-size: 22px; margin-bottom: 24px; padding-bottom: 10px; }
   .label { font-size: 12px; }
 
+  .news-item { grid-template-columns: 1fr; gap: 3px; padding: 9px 4px; }
+  .news-date { font-size: 14px; }
+  .news-title { font-size: 14px; }
+
   .overview-grid { grid-template-columns: 1fr; }
   .ov-cell { border-right: none; padding: 20px 16px; }
   .ov-cell:nth-last-child(-n+2) { border-bottom: 1px solid rgba(192,154,60,0.18); }
@@ -735,6 +777,7 @@ footer {
 <nav>
   <span class="nav-logo">錦秋茶会 2026</span>
   <div class="nav-links">
+    <a href="#news">お知らせ</a>
     <a href="#overview">概要</a>
     <a href="#program">プログラム</a>
     <a href="#tickets">チケット</a>
@@ -782,6 +825,31 @@ footer {
 <div style="aspect-ratio:24/7;overflow:hidden;">
   <img src="images/28_静寂の能舞台.jpeg" alt="南ヶ丘倶楽部 能舞台「千ケ滝」" style="width:100%;height:100%;object-fit:cover;object-position:center 55%;display:block;">
 </div>
+
+<!-- NEWS -->
+<section class="section" id="news" aria-labelledby="news-title">
+  <div class="section-inner">
+    <h2 class="section-title" id="news-title">お知らせ</h2>
+    <div class="news-list">
+      <article class="news-item">
+        <time class="news-date" datetime="2026-07-15">2026年7月15日</time>
+        <p class="news-title"><a href="https://www.kateigaho.com/travel/local/182415" target="_blank" rel="noopener">家庭画報に掲載されました</a></p>
+      </article>
+      <article class="news-item">
+        <time class="news-date" datetime="2026-07-24">2026年7月24日</time>
+        <p class="news-title">濃茶小間席「大庵」は完売いたしました</p>
+      </article>
+      <article class="news-item">
+        <time class="news-date" datetime="2026-08-03">2026年8月3日</time>
+        <p class="news-title">立礼グループ券・立礼ペア券を追加発売いたしました</p>
+      </article>
+      <article class="news-item">
+        <time class="news-date" datetime="2026-09-14">2026年9月14日</time>
+        <p class="news-title"><a href="https://www.premium-j.jp/features/20260914_78618/" target="_blank" rel="noopener">Premium Japanに掲載されました</a></p>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- OVERVIEW -->
 <section class="section" id="overview">
